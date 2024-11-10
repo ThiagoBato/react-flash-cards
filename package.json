@@ -21,10 +21,10 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "@tailwindcss/postcss7-compat": "2.0.4",
-    "autoprefixer": "9",
+    "autoprefixer": "10.4.20",
     "postcss": "8.4.47",
     "serve": "11.3.2",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "3.4.14"
   },
   "resolutions": {
     "react-error-overlay": "^6.0.11"
