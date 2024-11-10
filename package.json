@@ -20,7 +20,6 @@
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
-    "@tailwindcss/postcss7-compat": "2.0.4",
     "autoprefixer": "10.4.20",
     "postcss": "8.4.47",
     "serve": "11.3.2",

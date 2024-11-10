@@ -1,9 +1,10 @@
 // craco.config.js
-// https://tailwindcss.com/docs/guides/create-react-app
+const path = require('path');
+
 module.exports = {
   style: {
     postcss: {
-      plugins: [require('tailwindcss'), require('autoprefixer')],
+      config: path.resolve(__dirname, 'postcss.config.js'),
     },
   },
 };
