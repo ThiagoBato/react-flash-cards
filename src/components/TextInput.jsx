@@ -1,7 +1,6 @@
-import { getNewId } from "../../services/idService";
+import { getNewId } from '../services/idService';
 
-/* eslint-disable react/prop-types */
-export function TextInput({
+export default function TextInput({
   labelDescription = 'Descrição do label:',
   inputValue = 'Valor padrão do input',
   onInputChange = null,

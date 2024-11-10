@@ -3,41 +3,38 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@babel/core": "^7.16.0",
-    "@craco/craco": "6.1.1",
+    "@craco/craco": "7.1.0",
     "@testing-library/jest-dom": "5.11.4",
     "@testing-library/react": "11.1.0",
     "@testing-library/user-event": "12.1.10",
     "axios": "0.21.1",
-    "babel-preset-react-app": "10.0.1",
     "react": "17.0.2",
-    "react-dom": "19.0.0-rc-fb9a90fa48-20240614",
+    "react-dom": "17.0.2",
     "react-icons": "4.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.1",
     "react-spinners": "0.10.6",
     "react-tabs": "3.2.2",
     "react-toastify": "7.0.4",
     "uuid": "8.3.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
     "@tailwindcss/postcss7-compat": "2.0.4",
     "autoprefixer": "9",
-    "postcss": "7",
+    "postcss": "8.4.47",
     "serve": "11.3.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "resolutions": {
-    "@babel/core": "^7.26.0",
-    "react-scripts/@babel/core": "^7.26.0",
-    "babel-preset-react-app": "^10.0.1",
-    "react-error-overlay": "6.0.9"
+    "react-error-overlay": "^6.0.11"
   },
   "scripts": {
-    "dev": "craco start",
-    "build": "craco build",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider craco start",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider craco build",
     "prod:local": "NODE_OPTIONS=--openssl-legacy-provider craco build && serve -s build",
     "prod:cloud": "NODE_OPTIONS=--openssl-legacy-provider craco build && netlify deploy --prod --open --dir build",
-    "prod:cloud:test": "craco build && netlify deploy --open --dir build",
+    "prod:cloud:test": "NODE_OPTIONS=--openssl-legacy-provider craco build && netlify deploy --open --dir build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
