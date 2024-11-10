@@ -11,7 +11,7 @@
     "axios": "0.21.1",
     "babel-preset-react-app": "10.0.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react-dom": "19.0.0-rc-fb9a90fa48-20240614",
     "react-icons": "4.2.0",
     "react-scripts": "4.0.3",
     "react-spinners": "0.10.6",
